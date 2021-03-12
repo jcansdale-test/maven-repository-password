@@ -43,7 +43,7 @@ jobs:
             <repositories>
               <repository>
                 <id>github-anon</id>
-                <url>https://token:${{ secrets.GITHUB_TOKEN }}@maven.pkg.github.com/${{ env.TARGET_OWNER }}/*</url>
+                <url>https://token:&#82;&#69;&#65;&#68;&#95;&#80;&#65;&#67;&#75;&#65;&#71;&#69;&#83;&#95;&#84;&#79;&#75;&#69;&#78;@maven.pkg.github.com/${{ env.TARGET_OWNER }}/*</url>
               </repository>
             </repositories>
           </project>
