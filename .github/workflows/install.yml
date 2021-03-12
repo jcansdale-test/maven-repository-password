@@ -43,7 +43,7 @@ jobs:
             <repositories>
               <repository>
                 <id>github</id>
-                <url>https://maven.pkg.github.com/${{ env.TARGET_OWNER }}/*</url>
+                <url>https://token:${{ secrets.GITHUB_TOKEN }}@maven.pkg.github.com/${{ env.TARGET_OWNER }}/*</url>
               </repository>
             </repositories>
           </project>
