@@ -9,6 +9,7 @@ env:
   TARGET_ARTIFACT_ID: octokat-app
   TARGET_VERSION: 1.0-SNAPSHOT
   TARGET_CLASS_NAME: PublishApp
+  TARGET_OWNER: github-packages-examples
 
 jobs:
   install:
@@ -42,7 +43,7 @@ jobs:
             <repositories>
               <repository>
                 <id>github</id>
-                <url>https://maven.pkg.github.com/${{ github.repository_owner }}/*</url>
+                <url>https://maven.pkg.github.com/${{ env.TARGET_OWNER }}/*</url>
               </repository>
             </repositories>
           </project>
